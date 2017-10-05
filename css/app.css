@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+/* clear float */
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix::after,
+.clearfix::before {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+html, body {
+    width: 100% !important;
+    height: 100% !important;
+    font-family: 'Roboto Condensed', sans-serif; 
+    
+}
+
+body {
+    background: linear-gradient(to bottom right, rgba(86, 59, 236, 0.71), transparent);
+}
+
+#container {
+    width: 576px;
+    height: 600px;
+    overflow-y: auto;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4), 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+#header {
+    height: 70px;
+    background: rgba(62, 3, 99, 0.84);
+    box-sizing: border-box;
+    color: #f7f7f7;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+#left {
+    float: left;
+}
+#left h1 {
+    font-weight: normal;  
+    line-height: 70px; 
+    margin-left: 20px;
+}
+
+#buttons {
+    float: right; 
+}
+
+#buttons span {
+    line-height: 70px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+#input-elements {
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+#input-elements input[type=text] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 30px;
+    font-size: 17px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+#todo-list {
+    margin-top: 10px;
+}
+
+#empty-list {
+    width: 100%;
+    font-size: 18px;
+    color: #343434;
+    font-weight: bold;
+    margin-left: 100px;
+    display: none;
+}
+
+#todo-list ul{
+    list-style-type: none;
+}
+
+#todo-list ul li {
+    width: 100%;
+    height: 50px;
+}
+
+#todo-list ul li span{
+    width: 50px;
+    height: 50px;
+    background: #ff0000;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: #f7f7f7;   
+    cursor: pointer;
+}
+
+#todo-list ul li:nth-child(odd) {
+    background: #e5e5e5;
+}
+
+#todo-list ul li p {
+    display: inline-block;
+    width: 80%;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+#todo-list ul li input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
