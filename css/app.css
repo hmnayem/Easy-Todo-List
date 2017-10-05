@@ -66,6 +66,7 @@ body {
     line-height: 70px;
     margin-right: 20px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 #input-elements {
@@ -108,12 +109,18 @@ body {
     width: 50px;
     height: 50px;
     background: #ff0000;
-    display: inline-block;
     line-height: 50px;
     text-align: center;
     font-size: 24px;
     color: #f7f7f7;   
     cursor: pointer;
+    display: inline-block;
+    transition: width .5s ease-in;
+}
+
+.selected {
+    color: #787878;
+    text-decoration: line-through;
 }
 
 #todo-list ul li:nth-child(odd) {
